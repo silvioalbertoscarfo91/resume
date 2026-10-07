@@ -1646,6 +1646,33 @@
       .print-contact {
         display: none;
       }
+      .ver {
+        position: fixed;
+        left: 16px;
+        bottom: 16px;
+        z-index: 60;
+        display: flex;
+        background: var(--ink);
+        color: var(--paper);
+        font-size: 11px;
+      }
+      .ver > * {
+        padding: 7px 10px 6px;
+        text-decoration: none;
+      }
+      .ver span {
+        background: var(--accent);
+        color: var(--accent-ink);
+      }
+      .ver a:hover {
+        background: var(--paper);
+        color: var(--ink);
+      }
+      @media print {
+        .ver {
+          display: none;
+        }
+      }
     </style>
   </head>
   <body>
@@ -1834,6 +1861,7 @@
                   <li><strong>Moved the team's whole portfolio from Cloud Foundry to AWS</strong> as a team effort: QuickZoll, Via, Activ, Periodic, Via-Shop, Raporta and internal tools, now on cloud-native infrastructure (ECS, RDS, S3, CloudWatch).</li>
                   <li>Designed and built a mobile <strong>Angular PWA for issuing digital fines and receipts</strong>.</li>
                   <li>Keep quality high through code reviews and hands-on development, and mentor junior engineers.</li>
+                  <li><strong>Built an AI timesheet automation for Abacus:</strong> it reads the hours from customer PDF timesheets and books them into Abacus automatically, replacing manual data entry.</li>
                   <li>Bring AI-assisted engineering into daily work: spec-driven tasks, agent guard rails and review practices with Claude Code.</li>
                 </ul>
                 <p class="stack mono"><span>Architecture</span><span>Angular</span><span>Spring Boot</span><span>AWS</span><span>Docker</span><span>Kubernetes</span><span>Leadership</span></p>
@@ -1985,6 +2013,23 @@
             <article class="case">
               <button class="case-head" type="button" aria-expanded="false">
                 <span class="case-no mono">06</span>
+                <span class="case-title">Abacus timesheet AI</span>
+                <span class="case-meta mono"><b>AI automation</b>ti8m · internal</span>
+                <span class="case-icon" aria-hidden="true"></span>
+              </button>
+              <div class="case-body"><div>
+                <div class="case-grid">
+                  <div><h4 class="mono">Context</h4><p>Hours worked for customers arrive as PDF timesheets in each customer's own format, and someone had to type them into Abacus by hand.</p></div>
+                  <div class="sol"><h4 class="mono">What I did</h4><p>Built a pipeline that reads the customer PDFs, uses AI to extract the hours into structured entries, and uploads them to Abacus automatically.</p></div>
+                  <div><h4 class="mono">Outcome</h4><p>No more manual copy-and-paste between PDFs and the ERP, and fewer booking errors.</p></div>
+                  <div class="case-foot mono"><span class="chip hot">AI extraction</span><span class="chip">PDF parsing</span><span class="chip">Abacus ERP</span><span class="chip">Automation</span></div>
+                </div>
+              </div></div>
+            </article>
+
+            <article class="case">
+              <button class="case-head" type="button" aria-expanded="false">
+                <span class="case-no mono">07</span>
                 <span class="case-title">Smart Social Contracts</span>
                 <span class="case-meta mono"><b>Blockchain product</b>Reason.solutions · 2017—19</span>
                 <span class="case-icon" aria-hidden="true"></span>
@@ -2114,6 +2159,9 @@
       </div>
     </footer>
 
+    <nav class="ver mono" aria-label="Versions">
+      <span>v2</span><a href="v1/" target="_top">v1 ↗</a><a href="compare.html" target="_top">Compare</a>
+    </nav>
     <script>
       (function () {
         var root = document.documentElement;

@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV v1 vs v2</title>
+    <meta name="robots" content="noindex" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --paper: #f2f0eb;
+        --ink: #121211;
+        --ink-2: #3a3936;
+        --muted: #6d6a63;
+        --line: #d4cfc4;
+        --accent: #e5352b;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root:not([data-theme="light"]) {
+          --paper: #0e0e0d;
+          --ink: #eceae4;
+          --ink-2: #c4c1b9;
+          --muted: #8f8c84;
+          --line: #2b2a27;
+          --accent: #ff5640;
+        }
+      }
+      :root[data-theme="dark"] {
+        --paper: #0e0e0d;
+        --ink: #eceae4;
+        --ink-2: #c4c1b9;
+        --muted: #8f8c84;
+        --line: #2b2a27;
+        --accent: #ff5640;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: "Archivo", Helvetica, Arial, sans-serif;
+        line-height: 1.5;
+      }
+      .mono {
+        font-family: "JetBrains Mono", ui-monospace, monospace;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.02em;
+      }
+      header {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px 24px;
+        align-items: center;
+        padding: 16px;
+        border-bottom: 1px solid var(--ink);
+      }
+      h1 {
+        margin: 0;
+        font-size: 28px;
+        font-weight: 800;
+        letter-spacing: -0.02em;
+        font-variation-settings: "wdth" 80;
+      }
+      h1 span {
+        color: var(--accent);
+      }
+      .seg {
+        display: inline-flex;
+        border: 1px solid var(--ink);
+      }
+      .seg button {
+        background: none;
+        border: 0;
+        color: var(--ink);
+        padding: 7px 12px 6px;
+        cursor: pointer;
+        font: inherit;
+      }
+      .seg button[aria-pressed="true"] {
+        background: var(--ink);
+        color: var(--paper);
+      }
+      header a {
+        color: var(--ink);
+      }
+      .spacer {
+        flex: 1;
+      }
+      .panes {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        padding: 16px;
+      }
+      .pane {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        min-width: 0;
+      }
+      .pane-head {
+        display: flex;
+        justify-content: space-between;
+        color: var(--muted);
+      }
+      .pane-head b {
+        color: var(--ink);
+        font-weight: 500;
+      }
+      .frame {
+        border: 1px solid var(--line);
+        height: 72vh;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        background: #fff;
+      }
+      iframe {
+        border: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+      }
+      .mobile iframe {
+        width: 390px;
+        max-width: 100%;
+      }
+      .mobile .frame {
+        background: var(--line);
+      }
+      .notes {
+        padding: 8px 16px 48px;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 32px;
+        max-width: 1320px;
+      }
+      .notes h2 {
+        margin: 0 0 10px;
+        color: var(--accent);
+        font-weight: 500;
+      }
+      .notes ul {
+        margin: 0;
+        padding-left: 18px;
+        color: var(--ink-2);
+        font-size: 15px;
+      }
+      .notes li {
+        margin-bottom: 6px;
+      }
+      @media (max-width: 900px) {
+        .panes,
+        .notes {
+          grid-template-columns: 1fr;
+        }
+        .frame {
+          height: 64vh;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>CV <span>v1</span> vs <span>v2</span></h1>
+      <div class="seg mono" role="group" aria-label="Viewport">
+        <button type="button" data-vp="desktop" aria-pressed="true">Desktop</button>
+        <button type="button" data-vp="mobile" aria-pressed="false">Mobile</button>
+      </div>
+      <span class="spacer"></span>
+      <a class="mono" href="v1/">Open v1 ↗</a>
+      <a class="mono" href="./">Open v2 ↗</a>
+    </header>
+
+    <div class="panes" id="panes">
+      <div class="pane">
+        <div class="pane-head mono"><b>v1 · before</b><span>dark · gradients · cards</span></div>
+        <div class="frame"><iframe src="v1/" title="Resume version 1" loading="lazy"></iframe></div>
+      </div>
+      <div class="pane">
+        <div class="pane-head mono"><b>v2 · after</b><span>Swiss editorial · motion</span></div>
+        <div class="frame"><iframe src="./" title="Resume version 2" loading="lazy"></iframe></div>
+      </div>
+    </div>
+
+    <section class="notes">
+      <div>
+        <h2 class="mono">Design</h2>
+        <ul>
+          <li>Dropped the dark / cyan-violet gradient / glass-card look.</li>
+          <li>Swiss typographic layout: paper, ink, one red accent, strict grid, numbered sections.</li>
+          <li>Archivo variable font (width + weight axes) with JetBrains Mono for metadata.</li>
+          <li>Light and dark themes, with a toggle.</li>
+          <li>The print stylesheet is the CV: the PDF is generated from the same page.</li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="mono">Motion</h2>
+        <ul>
+          <li>Name letters animate in and stretch near the cursor (variable-font axes).</li>
+          <li>SBB-style split-flap board cycling through roles.</li>
+          <li>Profile statement lights up word by word as you scroll.</li>
+          <li>Timeline line draws itself; work index expands with a width-morphing title.</li>
+          <li>Side-project cards fill with ink from the cursor's entry point; tech marquee.</li>
+          <li>All motion is disabled when the system's reduce-motion setting is on.</li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="mono">Content</h2>
+        <ul>
+          <li>Rewritten summary and bullets: shorter and more concrete.</li>
+          <li>New: Abacus timesheet AI (customer PDF hours → Abacus, automatically).</li>
+          <li>New: ti8m AI agentic-delivery case (Spring Boot 4, Angular 22, Claude Code).</li>
+          <li>New Lab section: Concurrent Bank, local LinkedIn Post Bot, RN boilerplate.</li>
+          <li>Skills updated (Testcontainers, Flyway, Spring Security, GitHub Actions, AI engineering).</li>
+          <li>Date of birth and street address removed from the public page; 690 KB → ~115 KB.</li>
+        </ul>
+      </div>
+    </section>
+
+    <script>
+      document.querySelectorAll("[data-vp]").forEach(function (b) {
+        b.addEventListener("click", function () {
+          document.querySelectorAll("[data-vp]").forEach(function (x) {
+            x.setAttribute("aria-pressed", x === b);
+          });
+          document.getElementById("panes").classList.toggle("mobile", b.dataset.vp === "mobile");
+        });
+      });
+    </script>
+  </body>
+</html>
