@@ -1,0 +1,2198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Silvio Alberto Scarfò — CV</title>
+    <meta
+      name="description"
+      content="Silvio Alberto Scarfò — Senior Full-Stack Engineer and Lead Engineer at ti8m, Bern. Seven years building the digital customs of Switzerland (BAZG / DaziT)."
+    />
+    <meta name="author" content="Silvio Alberto Scarfò" />
+    <meta name="theme-color" content="#f5f5f7" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%231d1d1f'/%3E%3Ctext x='32' y='42' font-family='-apple-system,Helvetica,Arial,sans-serif' font-size='26' font-weight='700' text-anchor='middle' fill='%23f5f5f7'%3ESS%3C/text%3E%3C/svg%3E"
+    />
+    <style>
+      :root {
+        --bg: #f5f5f7;
+        --surface: #ffffff;
+        --surface-2: #fbfbfd;
+        --label: #1d1d1f;
+        --label-2: #6e6e73;
+        --label-3: #86868b;
+        --sep: rgba(0, 0, 0, 0.1);
+        --fill: rgba(120, 120, 128, 0.12);
+        --tint: #0071e3;
+        --tint-press: #0062c4;
+        --link: #0066cc;
+        --red: #e5352b;
+        --material: rgba(250, 250, 252, 0.72);
+        --material-edge: rgba(255, 255, 255, 0.6);
+        --sheet: rgba(255, 255, 255, 0.86);
+        --scrim: rgba(0, 0, 0, 0.32);
+        --shadow-s: 0 1px 2px rgba(0, 0, 0, 0.04), 0 2px 8px rgba(0, 0, 0, 0.04);
+        --shadow-l: 0 10px 40px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.06);
+        --r-l: 28px;
+        --r-m: 18px;
+        --r-s: 12px;
+        --gutter: max(20px, env(safe-area-inset-left));
+        --maxw: 1080px;
+        --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", "Segoe UI", system-ui, sans-serif;
+        --font-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", "Segoe UI", system-ui, sans-serif;
+        --mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, monospace;
+        --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+        color-scheme: light;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root:not([data-theme="light"]) {
+          --bg: #000000;
+          --surface: #1c1c1e;
+          --surface-2: #161617;
+          --label: #f5f5f7;
+          --label-2: #a1a1a6;
+          --label-3: #86868b;
+          --sep: rgba(255, 255, 255, 0.12);
+          --fill: rgba(120, 120, 128, 0.24);
+          --tint: #0a84ff;
+          --tint-press: #0077ed;
+          --link: #2997ff;
+          --red: #ff453a;
+          --material: rgba(22, 22, 23, 0.72);
+          --material-edge: rgba(255, 255, 255, 0.08);
+          --sheet: rgba(30, 30, 32, 0.88);
+          --scrim: rgba(0, 0, 0, 0.5);
+          --shadow-s: 0 0 0 1px rgba(255, 255, 255, 0.06);
+          --shadow-l: 0 10px 40px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.08);
+          color-scheme: dark;
+        }
+      }
+      :root[data-theme="dark"] {
+        --bg: #000000;
+        --surface: #1c1c1e;
+        --surface-2: #161617;
+        --label: #f5f5f7;
+        --label-2: #a1a1a6;
+        --label-3: #86868b;
+        --sep: rgba(255, 255, 255, 0.12);
+        --fill: rgba(120, 120, 128, 0.24);
+        --tint: #0a84ff;
+        --tint-press: #0077ed;
+        --link: #2997ff;
+        --red: #ff453a;
+        --material: rgba(22, 22, 23, 0.72);
+        --material-edge: rgba(255, 255, 255, 0.08);
+        --sheet: rgba(30, 30, 32, 0.88);
+        --scrim: rgba(0, 0, 0, 0.5);
+        --shadow-s: 0 0 0 1px rgba(255, 255, 255, 0.06);
+        --shadow-l: 0 10px 40px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.08);
+        color-scheme: dark;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      html {
+        -webkit-text-size-adjust: 100%;
+        background: var(--bg);
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--label);
+        font: 100%/1.47 var(--font);
+        letter-spacing: -0.011em;
+        -webkit-font-smoothing: antialiased;
+        overflow-x: hidden;
+        transition: background-color 0.5s var(--ease-out), color 0.5s var(--ease-out);
+      }
+      ::selection {
+        background: color-mix(in srgb, var(--tint) 30%, transparent);
+      }
+      a {
+        color: var(--link);
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      img {
+        display: block;
+        max-width: 100%;
+      }
+      :focus-visible {
+        outline: 3px solid color-mix(in srgb, var(--tint) 60%, transparent);
+        outline-offset: 2px;
+        border-radius: 8px;
+      }
+      .wrap {
+        max-width: var(--maxw);
+        margin: 0 auto;
+        padding: 0 var(--gutter);
+      }
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+      }
+
+      /* Type scale: tracking and leading change with size */
+      .t-hero {
+        font-family: var(--font-display);
+        font-size: clamp(3rem, 9vw, 6.5rem);
+        line-height: 1.02;
+        letter-spacing: -0.035em;
+        font-weight: 700;
+        margin: 0;
+      }
+      .t-title {
+        font-family: var(--font-display);
+        font-size: clamp(2.25rem, 5.4vw, 3.5rem);
+        line-height: 1.07;
+        letter-spacing: -0.028em;
+        font-weight: 700;
+        margin: 0;
+      }
+      .t-h3 {
+        font-family: var(--font-display);
+        font-size: clamp(1.375rem, 2.4vw, 1.75rem);
+        line-height: 1.14;
+        letter-spacing: -0.02em;
+        font-weight: 600;
+        margin: 0;
+      }
+      .t-lede {
+        font-size: clamp(1.1875rem, 2.1vw, 1.5rem);
+        line-height: 1.38;
+        letter-spacing: -0.016em;
+        font-weight: 500;
+        color: var(--label-2);
+        margin: 0;
+      }
+      .t-eyebrow {
+        font-size: 1.0625rem;
+        line-height: 1.3;
+        letter-spacing: -0.01em;
+        font-weight: 600;
+        color: var(--red);
+        margin: 0 0 10px;
+      }
+      .t-caption {
+        font-size: 0.75rem;
+        line-height: 1.33;
+        letter-spacing: 0.01em;
+        color: var(--label-3);
+      }
+      .acc {
+        color: var(--red);
+      }
+      .grad {
+        background: linear-gradient(90deg, var(--label) 0%, var(--label) 55%, var(--red) 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+
+      /* ───────── Pressable: feedback on pointer-down ───────── */
+      .press {
+        transition: transform 0.12s ease-out, background-color 0.2s, opacity 0.2s;
+        -webkit-tap-highlight-color: transparent;
+        touch-action: manipulation;
+      }
+      .press.is-down {
+        transform: scale(0.97);
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        min-height: 44px;
+        padding: 0 22px;
+        border-radius: 980px;
+        border: 0;
+        font: inherit;
+        font-size: 1.0625rem;
+        letter-spacing: -0.01em;
+        cursor: pointer;
+        text-decoration: none !important;
+      }
+      .btn-fill {
+        background: var(--tint);
+        color: #fff;
+      }
+      .btn-fill:hover {
+        background: var(--tint-press);
+      }
+      .btn-plain {
+        background: var(--fill);
+        color: var(--label);
+      }
+      .chev::after {
+        content: "";
+        display: inline-block;
+        width: 7px;
+        height: 7px;
+        border-right: 1.6px solid currentColor;
+        border-top: 1.6px solid currentColor;
+        transform: rotate(45deg);
+        margin-left: 2px;
+        margin-top: -1px;
+      }
+
+      /* ───────── Translucent nav with scroll-edge effect ───────── */
+      .nav {
+        position: fixed;
+        inset: 0 0 auto 0;
+        z-index: 40;
+        padding-top: env(safe-area-inset-top);
+      }
+      .nav::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: var(--material);
+        -webkit-backdrop-filter: blur(20px) saturate(180%);
+        backdrop-filter: blur(20px) saturate(180%);
+        opacity: var(--edge, 0);
+        transition: opacity 0.3s;
+        /* scroll-edge: soft fade instead of a hard divider */
+        -webkit-mask-image: linear-gradient(#000 70%, transparent);
+        mask-image: linear-gradient(#000 70%, transparent);
+      }
+      .nav-inner {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        height: 60px;
+      }
+      .brand {
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        color: var(--label);
+        font-size: 1.0625rem;
+        white-space: nowrap;
+        text-decoration: none !important;
+      }
+      .seg {
+        position: relative;
+        display: flex;
+        margin: 0 auto;
+        padding: 3px;
+        border-radius: 980px;
+        background: var(--fill);
+      }
+      .seg a {
+        position: relative;
+        z-index: 1;
+        padding: 6px 14px;
+        border-radius: 980px;
+        color: var(--label-2);
+        font-size: 0.8125rem;
+        font-weight: 500;
+        letter-spacing: -0.005em;
+        text-decoration: none !important;
+        transition: color 0.2s;
+        white-space: nowrap;
+      }
+      .seg a.on {
+        color: var(--label);
+      }
+      .seg-thumb {
+        position: absolute;
+        top: 3px;
+        bottom: 3px;
+        left: 0;
+        width: 0;
+        border-radius: 980px;
+        background: var(--surface);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 0 0 0.5px rgba(0, 0, 0, 0.04);
+        opacity: 0;
+        will-change: transform, width;
+      }
+      .nav-actions {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+      }
+      .icon-btn {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        border: 0;
+        background: var(--fill);
+        color: var(--label);
+        display: grid;
+        place-items: center;
+        cursor: pointer;
+      }
+      .nav .btn {
+        min-height: 32px;
+        padding: 0 14px;
+        font-size: 0.8125rem;
+        font-weight: 500;
+      }
+
+      /* ───────── Page (pushes back when a sheet opens) ───────── */
+      .page {
+        transform-origin: 50% 0;
+        will-change: transform;
+      }
+
+      /* ───────── Hero ───────── */
+      .hero {
+        padding: calc(120px + env(safe-area-inset-top)) 0 64px;
+        text-align: center;
+      }
+      .hero .t-lede {
+        max-width: 38ch;
+        margin: 22px auto 0;
+      }
+      .hero-cta {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 30px;
+      }
+      .materialize {
+        opacity: 0;
+        filter: blur(14px);
+        transform: scale(0.96);
+      }
+      .ready .materialize {
+        animation: materialize 1.1s var(--ease-out) both;
+        animation-delay: var(--d, 0s);
+      }
+      @keyframes materialize {
+        to {
+          opacity: 1;
+          filter: blur(0);
+          transform: none;
+        }
+      }
+      .role {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        height: 34px;
+        padding: 0 14px 0 10px;
+        border-radius: 980px;
+        background: var(--surface);
+        box-shadow: var(--shadow-s);
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: var(--label-2);
+        margin-bottom: 26px;
+      }
+      .role-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #30d158;
+        box-shadow: 0 0 0 3px color-mix(in srgb, #30d158 25%, transparent);
+      }
+      .ticker {
+        position: relative;
+        display: inline-block;
+        height: 1.3em;
+        overflow: hidden;
+        vertical-align: bottom;
+        color: var(--label);
+        text-align: left;
+      }
+      .ticker span {
+        display: block;
+        height: 1.3em;
+        line-height: 1.3em;
+        white-space: nowrap;
+      }
+      .portrait-card {
+        position: relative;
+        margin: 64px auto 0;
+        max-width: 880px;
+        border-radius: var(--r-l);
+        overflow: hidden;
+        background: radial-gradient(120% 90% at 50% 100%, #ececec 0%, #e6e6e6 55%, #dedede 100%);
+        box-shadow: var(--shadow-l);
+        aspect-ratio: 16 / 9;
+      }
+      .portrait-card img {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        height: 108%;
+        width: auto;
+        max-width: none;
+        transform: translateX(-50%) translateY(var(--py, 0px));
+        will-change: transform;
+        -webkit-mask-image: linear-gradient(to bottom, transparent, #000 16%),
+          linear-gradient(90deg, transparent, #000 22%, #000 78%, transparent);
+        -webkit-mask-composite: source-in;
+        mask-image: linear-gradient(to bottom, transparent, #000 16%),
+          linear-gradient(90deg, transparent, #000 22%, #000 78%, transparent);
+        mask-composite: intersect;
+      }
+      .portrait-glass {
+        position: absolute;
+        left: 16px;
+        right: 16px;
+        bottom: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px 16px;
+        padding: 14px 18px;
+        border-radius: var(--r-m);
+        background: rgba(255, 255, 255, 0.6);
+        -webkit-backdrop-filter: blur(24px) saturate(180%);
+        backdrop-filter: blur(24px) saturate(180%);
+        border-top: 1px solid rgba(255, 255, 255, 0.6);
+        color: #1d1d1f;
+        text-align: left;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+      }
+      .portrait-glass b {
+        display: block;
+        font-weight: 600;
+        letter-spacing: -0.012em;
+      }
+      .portrait-glass span {
+        font-size: 0.875rem;
+        color: #48484a;
+        font-weight: 500;
+      }
+      .clock {
+        font-variant-numeric: tabular-nums;
+      }
+
+      /* ───────── Sections ───────── */
+      section {
+        scroll-margin-top: 70px;
+      }
+      .sec {
+        padding: 96px 0;
+      }
+      .sec-head {
+        max-width: 760px;
+        margin-bottom: 44px;
+      }
+      .sec-head .t-lede {
+        margin-top: 14px;
+      }
+      .reveal {
+        opacity: 0;
+        transform: translateY(24px);
+        transition: opacity 0.9s var(--ease-out), transform 0.9s var(--ease-out);
+      }
+      .reveal.in {
+        opacity: 1;
+        transform: none;
+      }
+
+      /* Bento */
+      .bento {
+        display: grid;
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        gap: 16px;
+      }
+      .tile {
+        background: var(--surface);
+        border-radius: var(--r-l);
+        padding: 28px;
+        box-shadow: var(--shadow-s);
+        overflow: hidden;
+        position: relative;
+        min-height: 210px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .tile.w3 {
+        grid-column: span 3;
+      }
+      .tile.w2 {
+        grid-column: span 2;
+      }
+      .tile.w4 {
+        grid-column: span 4;
+      }
+      .tile .k {
+        font-size: 0.9375rem;
+        font-weight: 600;
+        color: var(--label-2);
+        letter-spacing: -0.01em;
+      }
+      .tile .v {
+        font-family: var(--font-display);
+        font-size: clamp(3.5rem, 7vw, 5.5rem);
+        line-height: 1;
+        letter-spacing: -0.045em;
+        font-weight: 700;
+        font-variant-numeric: tabular-nums;
+      }
+      .tile .v small {
+        font-size: 0.45em;
+        letter-spacing: -0.02em;
+        color: var(--label-2);
+        font-weight: 600;
+      }
+      .tile p {
+        margin: 6px 0 0;
+        color: var(--label-2);
+        font-size: 0.9375rem;
+        line-height: 1.4;
+      }
+      .tile.dark {
+        background: #1d1d1f;
+        color: #f5f5f7;
+      }
+      .tile.dark .k,
+      .tile.dark p {
+        color: #a1a1a6;
+      }
+      .award {
+        font-family: var(--font-display);
+        font-size: clamp(1.75rem, 3.4vw, 2.5rem);
+        line-height: 1.08;
+        letter-spacing: -0.03em;
+        font-weight: 700;
+      }
+      .award em {
+        font-style: normal;
+        background: linear-gradient(90deg, #ff9f0a, #ff375f);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      .langs {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        margin-top: 14px;
+      }
+      .langs span {
+        padding: 6px 12px;
+        border-radius: 980px;
+        background: var(--fill);
+        font-size: 0.875rem;
+        font-weight: 500;
+      }
+      .langs span i {
+        font-style: normal;
+        color: var(--label-2);
+        margin-left: 4px;
+        font-weight: 400;
+      }
+
+      /* Experience */
+      .roles {
+        display: grid;
+        gap: 16px;
+      }
+      .job {
+        display: grid;
+        grid-template-columns: 220px minmax(0, 1fr);
+        gap: 24px;
+        background: var(--surface);
+        border-radius: var(--r-l);
+        padding: 32px;
+        box-shadow: var(--shadow-s);
+      }
+      .job-when {
+        color: var(--label-2);
+        font-size: 0.9375rem;
+        font-weight: 500;
+      }
+      .job-when b {
+        display: block;
+        color: var(--label);
+        font-weight: 600;
+        margin-bottom: 2px;
+      }
+      .job-org {
+        margin: 6px 0 16px;
+        color: var(--label-2);
+        font-size: 1.0625rem;
+      }
+      .job-org strong {
+        color: var(--label);
+        font-weight: 600;
+      }
+      .pill {
+        display: inline-block;
+        margin-left: 6px;
+        padding: 2px 10px;
+        border-radius: 980px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 0;
+        color: #fff;
+        background: linear-gradient(90deg, #ff9f0a, #ff375f);
+        vertical-align: 2px;
+      }
+      .job ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        gap: 10px;
+      }
+      .job li {
+        position: relative;
+        padding-left: 20px;
+        color: var(--label-2);
+        line-height: 1.5;
+      }
+      .job li::before {
+        content: "";
+        position: absolute;
+        left: 2px;
+        top: 0.62em;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: var(--label-3);
+      }
+      .job li strong {
+        color: var(--label);
+        font-weight: 600;
+      }
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin-top: 18px;
+      }
+      .tags span {
+        padding: 4px 10px;
+        border-radius: 980px;
+        background: var(--fill);
+        color: var(--label-2);
+        font-size: 0.8125rem;
+        font-weight: 500;
+      }
+
+      /* Work grid → sheets */
+      .work {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+      }
+      .case {
+        position: relative;
+        text-align: left;
+        border: 0;
+        font: inherit;
+        color: inherit;
+        cursor: pointer;
+        background: var(--surface);
+        border-radius: var(--r-l);
+        padding: 28px 28px 24px;
+        box-shadow: var(--shadow-s);
+        min-height: 230px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        overflow: hidden;
+      }
+      .case:hover {
+        box-shadow: var(--shadow-l);
+      }
+      .case .k {
+        font-size: 0.8125rem;
+        font-weight: 600;
+        color: var(--label-2);
+        letter-spacing: 0;
+      }
+      .case p {
+        margin: 0;
+        color: var(--label-2);
+        line-height: 1.45;
+      }
+      .case .more {
+        margin-top: auto;
+        color: var(--link);
+        font-size: 0.9375rem;
+        font-weight: 500;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+      }
+      .case .plus {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: var(--label);
+        color: var(--bg);
+        display: grid;
+        place-items: center;
+        font-size: 20px;
+        line-height: 1;
+        font-weight: 400;
+      }
+      .case.hl {
+        background: #1d1d1f;
+        color: #f5f5f7;
+      }
+      .case.hl .k,
+      .case.hl p {
+        color: #a1a1a6;
+      }
+      .case.hl .plus {
+        background: #f5f5f7;
+        color: #1d1d1f;
+      }
+      .case.hl .more {
+        color: #2997ff;
+      }
+
+      /* Sheet */
+      .scrim {
+        position: fixed;
+        inset: 0;
+        z-index: 60;
+        background: var(--scrim);
+        opacity: 0;
+        pointer-events: none;
+      }
+      .sheet {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 61;
+        margin: 0 auto;
+        max-width: 720px;
+        max-height: calc(100svh - 40px);
+        display: flex;
+        flex-direction: column;
+        border-radius: 22px 22px 0 0;
+        background: var(--sheet);
+        -webkit-backdrop-filter: blur(30px) saturate(180%);
+        backdrop-filter: blur(30px) saturate(180%);
+        box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.18);
+        border-top: 1px solid var(--material-edge);
+        transform: translateY(110%);
+        visibility: hidden;
+        will-change: transform;
+        touch-action: none;
+      }
+      .sheet-grab {
+        flex: none;
+        padding: 10px 0 6px;
+        cursor: grab;
+        display: grid;
+        place-items: center;
+      }
+      .sheet-grab i {
+        width: 36px;
+        height: 5px;
+        border-radius: 3px;
+        background: var(--label-3);
+        opacity: 0.5;
+      }
+      .sheet-body {
+        overflow: auto;
+        padding: 6px 28px calc(32px + env(safe-area-inset-bottom));
+        overscroll-behavior: contain;
+        touch-action: pan-y;
+      }
+      .sheet-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 16px;
+        margin-bottom: 18px;
+      }
+      .sheet .k {
+        font-size: 0.8125rem;
+        font-weight: 600;
+        color: var(--label-2);
+        margin-bottom: 4px;
+      }
+      .sheet h3 {
+        font-family: var(--font-display);
+        font-size: clamp(1.75rem, 4vw, 2.25rem);
+        line-height: 1.08;
+        letter-spacing: -0.028em;
+        font-weight: 700;
+        margin: 0;
+      }
+      .sheet dl {
+        margin: 0;
+        display: grid;
+        gap: 2px;
+        background: var(--fill);
+        border-radius: var(--r-m);
+        overflow: hidden;
+      }
+      .sheet dl div {
+        background: var(--surface);
+        padding: 16px 18px;
+      }
+      .sheet dt {
+        font-size: 0.8125rem;
+        font-weight: 600;
+        color: var(--label-2);
+        margin-bottom: 4px;
+      }
+      .sheet dd {
+        margin: 0;
+        line-height: 1.5;
+      }
+      .sheet .tags {
+        margin-top: 16px;
+      }
+
+      /* Lab carousel */
+      .carousel {
+        position: relative;
+        margin: 0 calc(50% - 50vw);
+        overflow: hidden;
+        touch-action: pan-y;
+        cursor: grab;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+      .carousel.dragging {
+        cursor: grabbing;
+      }
+      .track {
+        display: flex;
+        gap: 16px;
+        padding: 6px 0 24px max(var(--gutter), calc((100vw - var(--maxw)) / 2 + var(--gutter)));
+        will-change: transform;
+      }
+      .slide {
+        flex: none;
+        width: min(420px, 82vw);
+        background: var(--surface);
+        border-radius: var(--r-l);
+        padding: 28px;
+        box-shadow: var(--shadow-s);
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        min-height: 360px;
+      }
+      .slide .k {
+        font-size: 0.8125rem;
+        font-weight: 600;
+        color: var(--label-2);
+      }
+      .slide p {
+        margin: 0;
+        color: var(--label-2);
+        line-height: 1.45;
+      }
+      .slide p strong {
+        color: var(--label);
+        font-weight: 600;
+      }
+      .code {
+        font-family: var(--mono);
+        font-size: 0.8125rem;
+        line-height: 1.6;
+        padding: 14px 16px;
+        border-radius: var(--r-s);
+        background: #1d1d1f;
+        color: #e5e5ea;
+        white-space: pre-wrap;
+      }
+      .code .p {
+        color: #64d2ff;
+      }
+      .code .c {
+        color: #8e8e93;
+      }
+      .slide .tags {
+        margin-top: auto;
+      }
+      .slide a {
+        font-weight: 500;
+        font-size: 0.9375rem;
+      }
+      .car-ctrl {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+        margin-top: -4px;
+      }
+      .car-ctrl .icon-btn {
+        width: 40px;
+        height: 40px;
+      }
+      .car-ctrl .icon-btn[disabled] {
+        opacity: 0.35;
+        cursor: default;
+      }
+      .dots {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        margin-right: auto;
+      }
+      .dots i {
+        width: 8px;
+        height: 8px;
+        border-radius: 4px;
+        background: var(--label-3);
+        opacity: 0.35;
+        transition: width 0.35s var(--ease-out), opacity 0.35s;
+      }
+      .dots i.on {
+        width: 22px;
+        opacity: 1;
+        background: var(--label);
+      }
+
+      /* Inset grouped lists */
+      .groups {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 32px 24px;
+      }
+      .group h3 {
+        margin: 0 0 8px 18px;
+        font-size: 0.8125rem;
+        font-weight: 500;
+        color: var(--label-2);
+        letter-spacing: 0;
+        text-transform: uppercase;
+      }
+      .list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background: var(--surface);
+        border-radius: var(--r-m);
+        overflow: hidden;
+        box-shadow: var(--shadow-s);
+      }
+      .list li {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 16px;
+        padding: 13px 18px;
+        position: relative;
+      }
+      .list li + li::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 18px;
+        right: 0;
+        height: 0.5px;
+        background: var(--sep);
+      }
+      .list li > span:first-child {
+        font-weight: 500;
+      }
+      .list li > span:last-child {
+        color: var(--label-2);
+        text-align: right;
+        font-size: 0.9375rem;
+      }
+      .list.stack li {
+        display: block;
+      }
+      .list.stack li b {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 2px;
+      }
+      .list.stack li span {
+        color: var(--label-2);
+        font-size: 0.9375rem;
+        line-height: 1.45;
+      }
+
+      /* Contact */
+      .contact {
+        text-align: center;
+        padding: 120px 0 96px;
+      }
+      .contact .t-lede {
+        max-width: 34ch;
+        margin: 16px auto 0;
+      }
+      .contact-row {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 32px;
+      }
+      footer {
+        border-top: 0.5px solid var(--sep);
+        padding: 20px 0 calc(28px + env(safe-area-inset-bottom));
+        color: var(--label-3);
+        font-size: 0.75rem;
+      }
+      footer .wrap {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+
+      /* ───────── Responsive ───────── */
+      @media (max-width: 900px) {
+        .seg {
+          display: none;
+        }
+        .nav-actions {
+          margin-left: auto;
+        }
+        .tile.w2,
+        .tile.w3,
+        .tile.w4 {
+          grid-column: span 3;
+        }
+        .job {
+          grid-template-columns: 1fr;
+          gap: 10px;
+        }
+      }
+      @media (max-width: 640px) {
+        .sec {
+          padding: 72px 0;
+        }
+        .bento {
+          grid-template-columns: 1fr 1fr;
+          gap: 12px;
+        }
+        .tile.w2 {
+          grid-column: span 1;
+        }
+        .tile.w3 {
+          grid-column: span 2;
+        }
+        .tile.w2:nth-child(3) {
+          grid-column: span 2;
+          min-height: 0;
+        }
+        .tile.w4,
+        .tile.full {
+          grid-column: span 2;
+        }
+        .tile {
+          padding: 20px;
+          min-height: 170px;
+          border-radius: 22px;
+        }
+        .work,
+        .groups {
+          grid-template-columns: 1fr;
+        }
+        .job {
+          padding: 24px;
+        }
+        .portrait-card {
+          aspect-ratio: 4 / 5;
+          margin-top: 48px;
+        }
+        .portrait-card img {
+          height: 92%;
+        }
+        .nav .btn span {
+          display: none;
+        }
+      }
+
+      /* ───────── Accessibility preferences ───────── */
+      @media (prefers-reduced-motion: reduce) {
+        .materialize,
+        .ready .materialize {
+          animation: none;
+          opacity: 1;
+          filter: none;
+          transform: none;
+        }
+        .reveal {
+          transform: none;
+          transition: opacity 0.3s ease;
+        }
+        .press.is-down {
+          transform: none;
+          opacity: 0.7;
+        }
+      }
+      @media (prefers-reduced-transparency: reduce) {
+        .nav::before,
+        .sheet,
+        .portrait-glass {
+          -webkit-backdrop-filter: none;
+          backdrop-filter: none;
+        }
+        :root {
+          --material: var(--bg);
+          --sheet: var(--surface);
+        }
+        .portrait-glass {
+          background: #fff;
+        }
+      }
+      @media (prefers-contrast: more) {
+        :root {
+          --sep: rgba(0, 0, 0, 0.4);
+          --label-2: #3a3a3c;
+        }
+        .tile,
+        .job,
+        .case,
+        .slide,
+        .list {
+          box-shadow: 0 0 0 1px var(--label);
+        }
+      }
+      @media print {
+        .nav,
+        .scrim,
+        .sheet,
+        .car-ctrl,
+        .hero-cta,
+        .contact-row {
+          display: none !important;
+        }
+        .reveal,
+        .materialize {
+          opacity: 1 !important;
+          transform: none !important;
+          filter: none !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a class="sr-only" href="#highlights">Skip to content</a>
+
+    <header class="nav" id="nav">
+      <div class="wrap nav-inner">
+        <a class="brand" href="#top">Silvio Scarfò</a>
+        <nav class="seg" id="seg" aria-label="Sections">
+          <span class="seg-thumb" id="segThumb" aria-hidden="true"></span>
+          <a href="#highlights">Highlights</a>
+          <a href="#experience">Experience</a>
+          <a href="#work">Work</a>
+          <a href="#lab">Lab</a>
+          <a href="#more">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="icon-btn press" id="theme" type="button" aria-label="Toggle dark mode">
+            <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.25" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.75a6.25 6.25 0 0 1 0 12.5z" fill="currentColor"/></svg>
+          </button>
+          <a class="btn btn-fill press" href="../Silvio_Alberto_Scarfo_CV.pdf" download>CV<span>&nbsp;PDF</span></a>
+        </div>
+      </div>
+    </header>
+
+    <div class="page" id="page">
+      <main id="top">
+        <!-- Hero -->
+        <section class="hero">
+          <div class="wrap">
+            <div class="role materialize" style="--d: 0s"><i class="role-dot"></i>Lead Engineer at ti8m · Bern</div>
+            <h1 class="t-hero materialize" style="--d: 0.08s">Silvio Alberto<br />Scarf<span class="acc">ò</span>.</h1>
+            <p class="t-lede materialize" style="--d: 0.18s">
+              Senior full-stack engineer. Seven years building the digital customs of Switzerland, now leading
+              <span class="ticker" id="ticker" aria-live="off"><span>Raporta.</span></span>
+            </p>
+            <div class="hero-cta materialize" style="--d: 0.28s">
+              <a class="btn btn-fill press" href="#experience">See my work</a>
+              <a class="btn btn-plain press chev" href="#contact">Get in touch</a>
+            </div>
+            <figure class="portrait-card materialize" style="--d: 0.38s; margin-bottom: 0" id="portrait">
+              <img src="data:image/jpeg;base64,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dERfV6YQh8N/DcuLPq+Db2ly5cuX/C9HqTGK6IhL2fiK4jaNdMFzK6VA6LRHrax3NXRjNI9MhD+T84+D9HyR8A/jTT4WHXdNGf/aAAwDAQACAAMAAAAQ888888888888888888888888888888888888888888888888888888888888888888888873488888888888888888888888888kZumPa8888888888888888888888s1ZvbzPU9888888888888888888884VhbVGfqPPW3888888888888888888pb/ftoUVKJwa888888888888888888854h6X6Fwfhx088888888888888888smT5biWZ44AHf888888888888888888GqIbfwp9tQwd8888888888888888889pO9PyLRn1sW88888888888888888r2juhXHvjdJl/wDPPPPPPPPPPPPPPPPPL0EqJz8SaKVtfPPPPPPPPPPPPPPPPPM4bTyAJANInMPPPPPPPPPPPPPPPPPPG3kQ0iJf5B0T/PPPPPPPPPPPPPPPPPPnkihDq/8AsFbzzzzzzzzzzzzzzzzzzzxM1Sw6463tvzzzzzzzzzzzzzzzzzzzy4gGaPdW9TjTzzzzzzzzzzzzzzzzzzzwCnlXnofGSvzzzzzzzzzzzzzzzzzzyjfYPuE5CylrHLzzzzzzzzzzzzzzzzSqtAIqb9vDBjd/n/zzzzzzzzzzzzjbFF6n9gpJCCDxZKCFlrbzzzzzzzRNM7NXE35stj8OLsJZgywhIF7zzzjGvayBhjTj8Ei+7RCpzxCwBCyVvDzy80iYIrBK5WwOHnygSxQzzgQhQGJTCj2lzywA5aADyTuax7CzzyAhChJAphu1Hmg1zRBwAAydgYTiBAAABCiwii7SOuyjihBixTzwwACRgTzzywRyzy2iYh8+67bjzzzzz3RTbxTzzjzzxzQLkKBinHRtKoQTzyDBwoDjxBTzzzgBQhfkoJFeXR+QAiAAwyUGHDhxDDDwLS4Z/wACeG2N6oSySsQgtZwD+0gUAcm8IGTzuK2PS0RjdGKMqEAZv6HuwwkiqWe8KXFrqr3fs1BO2KyDGwdWnumymSmmkZq1iiyrFBbLD5umLG2UILrymKUO6MoU21wYi74wYyAYjyIicUMcVqrOumkKRzWplU7L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" alt="Portrait of Silvio Alberto Scarfò" width="480" height="577" />
+              <figcaption class="portrait-glass">
+                <div><b>Wabern, Bern</b><span>Local time <span class="clock" id="clock">—</span></span></div>
+                <div><b>Italian · Spanish · English · German</b><span>German daily at work since 2022</span></div>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <!-- Highlights -->
+        <section class="sec" id="highlights">
+          <div class="wrap">
+            <div class="sec-head reveal">
+              <p class="t-eyebrow">Highlights</p>
+              <h2 class="t-title">Software the Swiss Confederation runs on.</h2>
+              <p class="t-lede">
+                I design the architecture, I still write the code, and I treat AI agents like any other teammate:
+                clear specs, hard rules, and every change reviewed.
+              </p>
+            </div>
+            <div class="bento">
+              <div class="tile w2 reveal">
+                <span class="k">Building software</span>
+                <div><div class="v"><span data-count="9">0</span><small>+ yrs</small></div><p>Seven of them on federal programmes at ti8m.</p></div>
+              </div>
+              <div class="tile w2 reveal">
+                <span class="k">Moved to AWS</span>
+                <div><div class="v"><span data-count="6">0</span><small>+ apps</small></div><p>From Cloud Foundry to cloud-native AWS, as a team.</p></div>
+              </div>
+              <div class="tile w2 reveal">
+                <span class="k">Team I lead</span>
+                <div><div class="v">3–4</div><p>Developers on Raporta, from refinement to production.</p></div>
+              </div>
+              <div class="tile dark w3 reveal">
+                <span class="k">Award</span>
+                <div><div class="award">QuickZoll &amp; Via.<br /><em>Best of Swiss Apps 2019.</em></div></div>
+              </div>
+              <div class="tile w3 reveal">
+                <span class="k">Languages</span>
+                <div>
+                  <div class="award">Four, at work.</div>
+                  <div class="langs">
+                    <span>Italian<i>Native</i></span><span>Spanish<i>C1</i></span><span>English<i>B2</i></span><span>German<i>B1</i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Experience -->
+        <section class="sec" id="experience" style="padding-top: 0">
+          <div class="wrap">
+            <div class="sec-head reveal">
+              <p class="t-eyebrow">Experience</p>
+              <h2 class="t-title">From apps to architecture.</h2>
+            </div>
+            <div class="roles">
+              <article class="job reveal">
+                <div class="job-when"><b>Mar 2024 – Now</b>Bern, Switzerland</div>
+                <div>
+                  <h3 class="t-h3">Senior Software Engineer · Lead Engineer</h3>
+                  <p class="job-org"><strong>ti8m</strong> for the Federal Office for Customs and Border Security (BAZG / DaziT)</p>
+                  <ul>
+                    <li><strong>Lead Engineer of Raporta.</strong> I own the application architecture and lead a team of 3–4 developers from refinement to production.</li>
+                    <li>Act as the link between business stakeholders and engineering: translate requirements into technical plans and weigh the risks and opportunities of every feature.</li>
+                    <li><strong>Moved the team's whole portfolio from Cloud Foundry to AWS</strong> as a team effort: QuickZoll, Via, Activ, Periodic, Via-Shop, Raporta and internal tools, now on cloud-native infrastructure (ECS, RDS, S3, CloudWatch).</li>
+                    <li>Designed and built a mobile <strong>Angular PWA for issuing digital fines and receipts</strong>.</li>
+                    <li><strong>Built an AI timesheet automation for Abacus:</strong> it reads the hours from customer PDF timesheets and books them into Abacus automatically, replacing manual data entry.</li>
+                    <li>Keep quality high through code reviews and hands-on development, and mentor junior engineers.</li>
+                    <li>Bring AI-assisted engineering into daily work: spec-driven tasks, agent guard rails and review practices with Claude Code.</li>
+                  </ul>
+                  <div class="tags"><span>Architecture</span><span>Angular</span><span>Spring Boot</span><span>AWS</span><span>Docker</span><span>Kubernetes</span><span>Leadership</span></div>
+                </div>
+              </article>
+              <article class="job reveal">
+                <div class="job-when"><b>Aug 2019 – Mar 2024</b>Bern, Switzerland</div>
+                <div>
+                  <h3 class="t-h3">Professional Software Engineer</h3>
+                  <p class="job-org"><strong>ti8m</strong> DaziT programme, BAZG <span class="pill">Best of Swiss Apps 2019</span></p>
+                  <ul>
+                    <li>Core member of the DaziT team, which digitises customs and border processes for the Swiss Confederation.</li>
+                    <li><strong>Led development and release of the QuickZoll and Via mobile apps</strong>, winners of “Best of Swiss Apps 2019”.</li>
+                    <li>Built cross-platform apps in React Native and TypeScript, and backend services in Java Spring Boot with Apache Kafka, REST and PostgreSQL.</li>
+                    <li>Set up a layered testing strategy: unit (JUnit, Mockito), integration, consumer-driven contract tests (Pact) and system integration tests.</li>
+                    <li>Ran Jenkins CI/CD pipelines and integrated external federal systems via REST and Kafka.</li>
+                    <li>Contributed across Via, QuickZoll, Activ, Periodic, Via-Shop (eVignette, PSVA, NMTS) and internal tools.</li>
+                  </ul>
+                  <div class="tags"><span>React Native</span><span>TypeScript</span><span>Spring Boot</span><span>Kafka</span><span>PostgreSQL</span><span>Pact</span><span>Jenkins</span></div>
+                </div>
+              </article>
+              <article class="job reveal">
+                <div class="job-when"><b>Jan 2019 – May 2019</b>Milan, Italy</div>
+                <div>
+                  <h3 class="t-h3">Software Engineer Trainee</h3>
+                  <p class="job-org"><strong>Digital Garage Academy</strong> × ti8m</p>
+                  <ul>
+                    <li>Selected for outstanding performance in a competitive training programme, which led to a position at ti8m in Bern.</li>
+                    <li>Built Angular frontends in practical projects with Scrum teams.</li>
+                  </ul>
+                </div>
+              </article>
+              <article class="job reveal">
+                <div class="job-when"><b>Mar 2017 – Sep 2019</b>Milan, Italy</div>
+                <div>
+                  <h3 class="t-h3">Head of Technology</h3>
+                  <p class="job-org"><strong>Reason.solutions</strong>, blockchain start-up</p>
+                  <ul>
+                    <li>Led a team of 3 developers building a blockchain-based <strong>Smart Social Contracts</strong> platform.</li>
+                    <li>Designed and built the React.js frontend and Spring Boot backend, and defined the roadmap with stakeholders.</li>
+                    <li>Published “What Are Smart Social Contracts? The New Business Model for the Blockchain”.</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- Work -->
+        <section class="sec" id="work" style="padding-top: 0">
+          <div class="wrap">
+            <div class="sec-head reveal">
+              <p class="t-eyebrow">Selected work</p>
+              <h2 class="t-title">Six projects. One standard.</h2>
+              <p class="t-lede">Tap a project to open it. Drag the sheet down, or flick it, to close.</p>
+            </div>
+            <div class="work">
+              <button class="case hl press reveal" type="button" data-case="raporta">
+                <span class="k">Lead Engineering · BAZG / DaziT · 2024–</span>
+                <h3 class="t-h3">Raporta</h3>
+                <p>The core application I lead: architecture, trade-offs and a team of 3–4.</p>
+                <span class="plus" aria-hidden="true">+</span>
+              </button>
+              <button class="case press reveal" type="button" data-case="aws">
+                <span class="k">Cloud migration · BAZG / DaziT · 2024</span>
+                <h3 class="t-h3">Cloud Foundry → AWS</h3>
+                <p>The team's whole portfolio, moved to cloud-native infrastructure.</p>
+                <span class="plus" aria-hidden="true">+</span>
+              </button>
+              <button class="case press reveal" type="button" data-case="quickzoll">
+                <span class="k">Mobile · Award · 2019–24</span>
+                <h3 class="t-h3">QuickZoll &amp; Via</h3>
+                <p>Declaring goods and buying the vignette, from a phone. Best of Swiss Apps 2019.</p>
+                <span class="plus" aria-hidden="true">+</span>
+              </button>
+              <button class="case press reveal" type="button" data-case="abacus">
+                <span class="k">AI automation · ti8m</span>
+                <h3 class="t-h3">Abacus timesheet AI</h3>
+                <p>Hours read from customer PDFs and booked into Abacus, automatically.</p>
+                <span class="plus" aria-hidden="true">+</span>
+              </button>
+              <button class="case press reveal" type="button" data-case="pwa">
+                <span class="k">Progressive Web App · BAZG / DaziT · 2024–</span>
+                <h3 class="t-h3">Digital Fines PWA</h3>
+                <p>An installable Angular app for issuing digital fines and receipts.</p>
+                <span class="plus" aria-hidden="true">+</span>
+              </button>
+              <button class="case press reveal" type="button" data-case="agentic">
+                <span class="k">AI-native engineering · ti8m · 2026</span>
+                <h3 class="t-h3">Agentic delivery</h3>
+                <p>A full-stack product delivered spec-first with Claude Code.</p>
+                <span class="plus" aria-hidden="true">+</span>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Lab -->
+        <section class="sec" id="lab" style="padding-top: 0">
+          <div class="wrap">
+            <div class="sec-head reveal">
+              <p class="t-eyebrow">Lab</p>
+              <h2 class="t-title">Built after hours.</h2>
+              <p class="t-lede">Concurrency, local AI, and the plumbing that makes them reliable. Drag or swipe through.</p>
+            </div>
+            <div class="carousel reveal" id="carousel" aria-roledescription="carousel">
+              <div class="track" id="track">
+                <article class="slide" aria-roledescription="slide">
+                  <span class="k">2026 · Java</span>
+                  <h3 class="t-h3">Concurrent Bank</h3>
+                  <p>A learning platform for concurrency and distributed systems, built level by level. Level 1 sets the baseline, with one rule: <strong>an account never goes negative.</strong></p>
+                  <div class="code"><span class="p">POST</span> /api/accounts/42/withdrawals
+<span class="c">// 422 Unprocessable Content</span>
+{ "type": "…/insufficient-funds" }</div>
+                  <div class="tags"><span>Java 21</span><span>Spring Boot</span><span>Angular</span><span>Testcontainers</span><span>RFC 9457</span></div>
+                </article>
+                <article class="slide" aria-roledescription="slide">
+                  <span class="k">2026 · Python</span>
+                  <h3 class="t-h3">LinkedIn Post Bot, Local</h3>
+                  <p>A Telegram bot that researches a topic, drafts three posts with a <strong>local LLM</strong>, creates an image with <strong>FLUX on Apple Silicon</strong> and publishes the chosen one. Nothing leaves the machine.</p>
+                  <div class="code"><span class="p">/genera</span> event-driven architecture
+<span class="c">// search → 3 drafts → image → publish</span></div>
+                  <div class="tags"><span>Python 3.14</span><span>Ollama</span><span>mflux</span><span>OAuth</span></div>
+                  <a href="https://github.com/silvioalbertoscarfo91/linkedin-post-bot-local" target="_blank" rel="noreferrer">View on GitHub</a>
+                </article>
+                <article class="slide" aria-roledescription="slide">
+                  <span class="k">2026 · Python</span>
+                  <h3 class="t-h3">LinkedIn Post Bot, Cloud</h3>
+                  <p>The same Telegram flow on <strong>NVIDIA-hosted models</strong>, publishing through LinkedIn OAuth, with daily topic rotation and a dry-run mode.</p>
+                  <div class="code"><span class="p">tap</span> candidate 2
+<span class="c">// published → link to the live post</span></div>
+                  <div class="tags"><span>Python</span><span>OpenAI SDK</span><span>APScheduler</span><span>pytest</span></div>
+                  <a href="https://github.com/silvioalbertoscarfo91/linkedin-post-bot" target="_blank" rel="noreferrer">View on GitHub</a>
+                </article>
+                <article class="slide" aria-roledescription="slide">
+                  <span class="k">2026 · TypeScript</span>
+                  <h3 class="t-h3">React Native Boilerplate</h3>
+                  <p>My starting point for mobile apps, from the QuickZoll and Via years: React Native 0.85, React 19, Redux, React Navigation 7, ESLint and Jest.</p>
+                  <div class="code"><span class="p">$</span> npx react-native run-ios
+<span class="c">// navigation · state · tests: ready</span></div>
+                  <div class="tags"><span>React Native</span><span>Redux</span><span>Jest</span></div>
+                  <a href="https://github.com/silvioalbertoscarfo91/boilerPlateApp" target="_blank" rel="noreferrer">View on GitHub</a>
+                </article>
+              </div>
+            </div>
+            <div class="car-ctrl">
+              <div class="dots" id="dots" aria-hidden="true"></div>
+              <button class="icon-btn press" id="prev" type="button" aria-label="Previous project">
+                <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M9 2 4 7l5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <button class="icon-btn press" id="next" type="button" aria-label="Next project">
+                <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="m5 2 5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Skills & background -->
+        <section class="sec" id="more" style="padding-top: 0">
+          <div class="wrap">
+            <div class="sec-head reveal">
+              <p class="t-eyebrow">Skills &amp; background</p>
+              <h2 class="t-title">The toolbox.</h2>
+            </div>
+            <div class="groups">
+              <div class="group reveal">
+                <h3>Stack</h3>
+                <ul class="list">
+                  <li><span>Frontend</span><span>Angular, React, React Native, TypeScript, PWA, RxJS, NgRx</span></li>
+                  <li><span>Backend</span><span>Java 21+, Spring Boot, Kafka, PostgreSQL, Flyway, OpenAPI</span></li>
+                  <li><span>Cloud</span><span>AWS (ECS, RDS, S3, CloudWatch), Docker, Kubernetes, Jenkins, GitHub Actions</span></li>
+                  <li><span>Quality</span><span>JUnit 5, Mockito, Pact, Testcontainers, Jest</span></li>
+                  <li><span>AI</span><span>Claude Code, spec-driven delivery, Ollama, LLM APIs, Python</span></li>
+                  <li><span>Observability</span><span>Grafana, Splunk, Prometheus</span></li>
+                </ul>
+              </div>
+              <div class="group reveal">
+                <h3>Ways of working</h3>
+                <ul class="list">
+                  <li><span>Architecture</span><span>iSAQB CPSA-F</span></li>
+                  <li><span>Leadership</span><span>Team of 3–4, mentoring</span></li>
+                  <li><span>Process</span><span>Agile, Scrum, SAFe</span></li>
+                </ul>
+                <h3 style="margin-top: 28px">Certificates</h3>
+                <ul class="list">
+                  <li><span>Software Architecture</span><span>iSAQB CPSA-F</span></li>
+                  <li><span>AWS</span><span>Technical &amp; Cloud Essentials</span></li>
+                  <li><span>Kubernetes</span><span>Fundamentals</span></li>
+                  <li><span>German</span><span>B1 · fide 2023</span></li>
+                </ul>
+              </div>
+              <div class="group reveal">
+                <h3>Education</h3>
+                <ul class="list stack">
+                  <li><b>BSc Computer Engineering</b><span>Università degli Studi di Bergamo, 2015–2018. Thesis on Plasma chains (Ethereum layer-2 scaling).</span></li>
+                  <li><b>Erasmus exchange</b><span>Universidad de Las Palmas de Gran Canaria, 2016–2017</span></li>
+                </ul>
+              </div>
+              <div class="group reveal">
+                <h3>Languages</h3>
+                <ul class="list">
+                  <li><span>Italian</span><span>Native</span></li>
+                  <li><span>Spanish</span><span>Native · C1</span></li>
+                  <li><span>English</span><span>Advanced · B2</span></li>
+                  <li><span>German</span><span>B1 · main working language since 2022</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="contact" id="contact">
+          <div class="wrap reveal">
+            <p class="t-eyebrow">Contact</p>
+            <h2 class="t-title">Let's build something<br />that just works.</h2>
+            <p class="t-lede">Based in Wabern, Bern. The fastest way to reach me is email.</p>
+            <div class="contact-row">
+              <a class="btn btn-fill press" href="mailto:silvioalbertoscarfo@gmail.com">silvioalbertoscarfo@gmail.com</a>
+              <a class="btn btn-plain press" href="tel:+41767438975">+41 76 743 89 75</a>
+            </div>
+            <div class="contact-row" style="margin-top: 14px">
+              <a class="chev" href="https://www.linkedin.com/in/silvio-alberto-scarf%C3%B2-999717175" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a class="chev" href="https://github.com/silvioalbertoscarfo91" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="chev" href="../Silvio_Alberto_Scarfo_CV.pdf" download>Download CV</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="wrap">
+          <span>© 2026 Silvio Alberto Scarfò</span>
+          <span>Hand-written HTML. Springs, not keyframes.</span>
+        </div>
+      </footer>
+    </div>
+
+    <div class="scrim" id="scrim"></div>
+    <div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle">
+      <div class="sheet-grab" id="grab"><i></i></div>
+      <div class="sheet-body" id="sheetBody">
+        <div class="sheet-top">
+          <div><div class="k" id="sheetKicker"></div><h3 id="sheetTitle"></h3></div>
+          <button class="icon-btn press" id="sheetClose" type="button" aria-label="Close">
+            <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 2l8 8M10 2l-8 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </button>
+        </div>
+        <dl id="sheetList"></dl>
+        <div class="tags" id="sheetTags"></div>
+      </div>
+    </div>
+
+    <script>
+      (function () {
+        var root = document.documentElement;
+        var reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+        /* ─────────────────────────────────────────────
+           Spring: Apple's two designer parameters.
+           dampingRatio 1 = critically damped (no bounce), <1 = overshoot.
+           response = seconds to (roughly) reach the target. Not a duration.
+           Animates from the live value and keeps velocity on re-target,
+           so it can be grabbed and reversed at any instant.
+           ───────────────────────────────────────────── */
+        function Spring(value, onUpdate) {
+          this.value = value;
+          this.velocity = 0;
+          this.target = value;
+          this.damping = 1;
+          this.response = 0.4;
+          this.onUpdate = onUpdate;
+          this.onRest = null;
+          this.raf = 0;
+          this.last = 0;
+        }
+        Spring.prototype.to = function (target, opts) {
+          opts = opts || {};
+          this.target = target;
+          if (opts.damping != null) this.damping = opts.damping;
+          if (opts.response != null) this.response = opts.response;
+          if (opts.velocity != null) this.velocity = opts.velocity;
+          this.onRest = opts.onRest || null;
+          if (reduce) {
+            this.set(target);
+            if (this.onRest) this.onRest();
+            return;
+          }
+          if (!this.raf) {
+            this.last = performance.now();
+            this.raf = requestAnimationFrame(this.tick.bind(this));
+          }
+        };
+        Spring.prototype.set = function (v) {
+          this.stop();
+          this.value = this.target = v;
+          this.velocity = 0;
+          this.onUpdate(v);
+        };
+        Spring.prototype.stop = function () {
+          if (this.raf) cancelAnimationFrame(this.raf);
+          this.raf = 0;
+        };
+        Spring.prototype.tick = function (now) {
+          var dt = Math.min(0.064, (now - this.last) / 1000);
+          this.last = now;
+          var k = Math.pow((2 * Math.PI) / this.response, 2); // stiffness (mass = 1)
+          var c = (4 * Math.PI * this.damping) / this.response; // damping coefficient
+          // substeps keep the integration stable at low frame rates
+          var steps = Math.max(1, Math.ceil(dt / 0.004));
+          var h = dt / steps;
+          for (var i = 0; i < steps; i++) {
+            var a = -k * (this.value - this.target) - c * this.velocity;
+            this.velocity += a * h;
+            this.value += this.velocity * h;
+          }
+          this.onUpdate(this.value);
+          if (Math.abs(this.velocity) < 0.5 && Math.abs(this.value - this.target) < 0.5) {
+            this.raf = 0;
+            this.value = this.target;
+            this.velocity = 0;
+            this.onUpdate(this.value);
+            if (this.onRest) this.onRest();
+            return;
+          }
+          this.raf = requestAnimationFrame(this.tick.bind(this));
+        };
+
+        /* Momentum projection, exactly as in "Designing Fluid Interfaces" */
+        function project(v, d) {
+          d = d || 0.998;
+          return ((v / 1000) * d) / (1 - d);
+        }
+        /* Rubber-band: resistance grows the further past the bound */
+        function rubberband(over, dim, cst) {
+          cst = cst || 0.55;
+          return (over * dim * cst) / (dim + cst * Math.abs(over));
+        }
+        /* Velocity from a short pointer history */
+        function Tracker() {
+          this.h = [];
+        }
+        Tracker.prototype.add = function (x, t) {
+          this.h.push({ x: x, t: t });
+          if (this.h.length > 6) this.h.shift();
+        };
+        Tracker.prototype.velocity = function () {
+          var h = this.h;
+          if (h.length < 2) return 0;
+          var a = h[0], b = h[h.length - 1];
+          for (var i = h.length - 2; i >= 0; i--) {
+            if (b.t - h[i].t > 100) break;
+            a = h[i];
+          }
+          var dt = (b.t - a.t) / 1000;
+          return dt > 0 ? (b.x - a.x) / dt : 0;
+        };
+
+        /* ───────── Theme (eased, no brightness jump) ───────── */
+        try {
+          var saved = localStorage.getItem("theme-apple");
+          if (saved) root.setAttribute("data-theme", saved);
+        } catch (e) {}
+        document.getElementById("theme").addEventListener("click", function () {
+          var dark =
+            root.getAttribute("data-theme") === "dark" ||
+            (!root.getAttribute("data-theme") && matchMedia("(prefers-color-scheme: dark)").matches);
+          var next = dark ? "light" : "dark";
+          root.setAttribute("data-theme", next);
+          try {
+            localStorage.setItem("theme-apple", next);
+          } catch (e) {}
+        });
+
+        /* ───────── Press feedback on pointer-down ───────── */
+        document.querySelectorAll(".press").forEach(function (el) {
+          var up = function () {
+            el.classList.remove("is-down");
+          };
+          el.addEventListener("pointerdown", function (e) {
+            if (e.button !== 0) return;
+            el.classList.add("is-down");
+          });
+          el.addEventListener("pointerup", up);
+          el.addEventListener("pointercancel", up);
+          el.addEventListener("pointerleave", up);
+        });
+
+        /* ───────── Hero entrance ───────── */
+        requestAnimationFrame(function () {
+          document.body.classList.add("ready");
+        });
+
+        /* ───────── Ticker: words slide on a critically damped spring ───────── */
+        var ticker = document.getElementById("ticker");
+        var words = ["Raporta.", "a team of 3–4 engineers.", "spec-driven AI delivery."];
+        var wi = 0;
+        var tickSpan = ticker.firstElementChild;
+        var widthSpring = new Spring(tickSpan.offsetWidth, function (v) {
+          ticker.style.width = v + "px";
+        });
+        widthSpring.set(tickSpan.offsetWidth);
+        if (!reduce) {
+          setInterval(function () {
+            if (document.hidden) return;
+            wi = (wi + 1) % words.length;
+            var incoming = document.createElement("span");
+            incoming.textContent = words[wi];
+            incoming.style.position = "absolute";
+            incoming.style.left = "0";
+            incoming.style.top = "0";
+            ticker.appendChild(incoming);
+            var outgoing = tickSpan;
+            var h = ticker.offsetHeight;
+            // the spring runs on 0..100 so its rest threshold stays sub-pixel
+            var s = new Spring(0, function (v) {
+              var p = v / 100;
+              outgoing.style.transform = "translateY(" + -p * h + "px)";
+              outgoing.style.opacity = 1 - p;
+              incoming.style.transform = "translateY(" + (1 - p) * h + "px)";
+              incoming.style.opacity = p;
+            });
+            s.onUpdate(0);
+            s.to(100, {
+              damping: 1,
+              response: 0.45,
+              onRest: function () {
+                outgoing.remove();
+                incoming.style.position = "";
+              },
+            });
+            widthSpring.to(measure(words[wi]), { damping: 1, response: 0.45 });
+            tickSpan = incoming;
+          }, 3200);
+        }
+        function measure(text) {
+          var m = document.createElement("span");
+          m.textContent = text;
+          m.style.cssText = "position:absolute;visibility:hidden;white-space:nowrap";
+          ticker.appendChild(m);
+          var w = m.offsetWidth;
+          m.remove();
+          return w;
+        }
+
+        /* ───────── Clock ───────── */
+        var clock = document.getElementById("clock");
+        var tickClock = function () {
+          try {
+            clock.textContent = new Intl.DateTimeFormat("de-CH", {
+              timeZone: "Europe/Zurich",
+              hour: "2-digit",
+              minute: "2-digit",
+            }).format(new Date());
+          } catch (e) {}
+        };
+        tickClock();
+        setInterval(tickClock, 15000);
+
+        /* ───────── Reveal + counters ───────── */
+        var io = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (e) {
+              if (!e.isIntersecting) return;
+              e.target.classList.add("in");
+              io.unobserve(e.target);
+              e.target.querySelectorAll("[data-count]").forEach(function (n) {
+                var to = parseInt(n.dataset.count, 10);
+                var s = new Spring(0, function (v) {
+                  n.textContent = Math.max(0, Math.round(v));
+                });
+                s.to(to, { damping: 1, response: 0.9 });
+              });
+            });
+          },
+          { rootMargin: "0px 0px -10% 0px" }
+        );
+        document.querySelectorAll(".reveal").forEach(function (el) {
+          var sib = el.parentNode.querySelectorAll(":scope > .reveal");
+          var idx = Array.prototype.indexOf.call(sib, el);
+          if (idx > 0) el.style.transitionDelay = Math.min(idx, 5) * 60 + "ms";
+          io.observe(el);
+        });
+
+        /* ───────── Nav: scroll-edge material + segmented thumb on springs ───────── */
+        var nav = document.getElementById("nav");
+        var seg = document.getElementById("seg");
+        var thumb = document.getElementById("segThumb");
+        var links = Array.from(seg.querySelectorAll("a"));
+        var targets = links.map(function (a) {
+          return document.querySelector(a.getAttribute("href"));
+        });
+        var tx = new Spring(0, function (v) {
+          thumb.style.transform = "translateX(" + v + "px)";
+        });
+        var tw = new Spring(0, function (v) {
+          thumb.style.width = v + "px";
+        });
+        var current = -2;
+        var thumbShown = false;
+        function moveThumb(i) {
+          if (i === current) return;
+          current = i;
+          links.forEach(function (a, k) {
+            a.classList.toggle("on", k === i);
+          });
+          if (i < 0) {
+            thumb.style.opacity = 0;
+            thumbShown = false;
+            return;
+          }
+          var a = links[i];
+          var x = a.offsetLeft, w = a.offsetWidth;
+          if (!thumbShown) {
+            tx.set(x);
+            tw.set(w);
+            thumb.style.transition = "opacity .25s";
+            thumb.style.opacity = 1;
+            thumbShown = true;
+          } else {
+            tx.to(x, { damping: 1, response: 0.35 });
+            tw.to(w, { damping: 1, response: 0.35 });
+          }
+        }
+        var portrait = document.getElementById("portrait");
+        var pimg = portrait.querySelector("img");
+        var ticking = false;
+        function onScroll() {
+          ticking = false;
+          nav.style.setProperty("--edge", Math.min(1, scrollY / 40));
+          var idx = -1;
+          targets.forEach(function (t, k) {
+            if (t && t.getBoundingClientRect().top < innerHeight * 0.35) idx = k;
+          });
+          moveThumb(idx);
+          if (!reduce) {
+            var r = portrait.getBoundingClientRect();
+            if (r.bottom > 0 && r.top < innerHeight) {
+              var p = (r.top + r.height / 2 - innerHeight / 2) / innerHeight;
+              pimg.style.setProperty("--py", (p * 24).toFixed(1) + "px");
+            }
+          }
+        }
+        addEventListener(
+          "scroll",
+          function () {
+            if (!ticking) {
+              ticking = true;
+              requestAnimationFrame(onScroll);
+            }
+          },
+          { passive: true }
+        );
+        addEventListener("resize", function () {
+          current = -2;
+          onScroll();
+        });
+        onScroll();
+
+        /* ───────── Sheet: drag 1:1, project momentum, rubber-band, push page back ───────── */
+        var CASES = {
+          raporta: {
+            k: "Lead Engineering · BAZG / DaziT · 2024–",
+            t: "Raporta",
+            rows: [
+              ["Context", "BAZG needed a core application delivered with a clear architecture, managed risk and a tight loop between business and engineering."],
+              ["What I do", "Lead Engineer: I defined the architecture, steer feature trade-offs with stakeholders and lead a team of 3–4 developers, while still coding and reviewing."],
+              ["Role", "Lead Engineer, team lead, hands-on developer."],
+            ],
+            tags: ["Architecture", "Team leadership", "Angular", "Spring Boot", "AWS"],
+          },
+          aws: {
+            k: "Cloud migration · BAZG / DaziT · 2024",
+            t: "Cloud Foundry → AWS",
+            rows: [
+              ["Context", "The team's whole portfolio ran on Cloud Foundry and had to move to cloud-native infrastructure on AWS."],
+              ["What we did", "Migrated QuickZoll, Via, Activ, Periodic, Via-Shop, Raporta and the internal tools, as a team."],
+              ["Outcome", "Six product applications plus internal tools running on cloud-native AWS infrastructure."],
+            ],
+            tags: ["ECS", "EC2", "RDS", "S3", "CloudWatch", "Docker", "Kubernetes"],
+          },
+          quickzoll: {
+            k: "Mobile · Award · 2019–24",
+            t: "QuickZoll & Via",
+            rows: [
+              ["Context", "Travellers needed a simple way to declare goods at the Swiss border, and road users a digital route to the vignette."],
+              ["What I did", "Led development and release of the QuickZoll and Via apps (React Native, TypeScript) on Spring Boot, Kafka and PostgreSQL services, and contributed to Via-Shop (eVignette, PSVA, NMTS)."],
+              ["Outcome", "Best of Swiss Apps 2019 for QuickZoll & Via."],
+            ],
+            tags: ["React Native", "TypeScript", "Spring Boot", "Kafka", "Pact"],
+          },
+          abacus: {
+            k: "AI automation · ti8m",
+            t: "Abacus timesheet AI",
+            rows: [
+              ["Context", "Hours worked for customers arrive as PDF timesheets in each customer's own format, and someone had to type them into Abacus by hand."],
+              ["What I did", "Built a pipeline that reads the customer PDFs, uses AI to extract the hours into structured entries, and uploads them to Abacus automatically."],
+              ["Outcome", "No more manual copy-and-paste between PDFs and the ERP, and fewer booking errors."],
+            ],
+            tags: ["AI extraction", "PDF parsing", "Abacus ERP", "Automation"],
+          },
+          pwa: {
+            k: "Progressive Web App · BAZG / DaziT · 2024–",
+            t: "Digital Fines PWA",
+            rows: [
+              ["Context", "Issuing fines and receipts needed a modern, installable mobile experience."],
+              ["What I did", "Designed and built a mobile Angular Progressive Web App for issuing digital fines and receipts."],
+              ["Role", "Senior engineer: design and hands-on development."],
+            ],
+            tags: ["Angular", "PWA", "TypeScript"],
+          },
+          agentic: {
+            k: "AI-native engineering · ti8m · 2026",
+            t: "Agentic delivery",
+            rows: [
+              ["Question", "Can coding agents deliver a production-grade full-stack product, if the process around them is engineered properly?"],
+              ["What I did", "Ran spec-driven delivery with Claude Code: requirements → task plans → agent goals with hard rules and a verifiable definition of done. The result is a restaurant platform with a Spring Boot 4 / Java 25 API and two Angular 22 apps."],
+              ["Engineering", "PostgreSQL + Flyway, JWT-secured staff area, RFC 9457 errors, i18n with Transloco, Testcontainers, lint gates and code review of agent output."],
+            ],
+            tags: ["Claude Code", "Spec-driven", "Spring Boot 4", "Angular 22", "Testcontainers"],
+          },
+        };
+
+        var page = document.getElementById("page");
+        var scrim = document.getElementById("scrim");
+        var sheet = document.getElementById("sheet");
+        var grab = document.getElementById("grab");
+        var body = document.getElementById("sheetBody");
+        var opener = null;
+        var isOpen = false;
+        var sheetH = 600;
+
+        function paint(y) {
+          sheet.style.transform = "translateY(" + y + "px)";
+          var p = Math.max(0, Math.min(1, 1 - y / sheetH)); // 1 = fully open
+          scrim.style.opacity = p;
+          if (!reduce) {
+            var s = 1 - 0.04 * p;
+            page.style.transform = p > 0.001 ? "scale(" + s + ")" : "";
+            page.style.borderRadius = p > 0.001 ? 12 * p + "px" : "";
+            page.style.overflow = p > 0.001 ? "hidden" : "";
+          }
+        }
+        var ys = new Spring(0, paint);
+
+        function fill(id) {
+          var c = CASES[id];
+          document.getElementById("sheetKicker").textContent = c.k;
+          document.getElementById("sheetTitle").textContent = c.t;
+          var dl = document.getElementById("sheetList");
+          dl.innerHTML = "";
+          c.rows.forEach(function (r) {
+            var d = document.createElement("div");
+            var dt = document.createElement("dt");
+            var dd = document.createElement("dd");
+            dt.textContent = r[0];
+            dd.textContent = r[1];
+            d.appendChild(dt);
+            d.appendChild(dd);
+            dl.appendChild(d);
+          });
+          var tg = document.getElementById("sheetTags");
+          tg.innerHTML = "";
+          c.tags.forEach(function (t) {
+            var s = document.createElement("span");
+            s.textContent = t;
+            tg.appendChild(s);
+          });
+        }
+        function openSheet(id, from) {
+          fill(id);
+          opener = from;
+          sheet.style.visibility = "visible";
+          sheetH = sheet.offsetHeight;
+          if (!isOpen) ys.set(ys.raf ? ys.value : sheetH);
+          isOpen = true;
+          scrim.style.pointerEvents = "auto";
+          document.body.style.overflow = "hidden";
+          ys.to(0, { damping: 1, response: 0.4 });
+          setTimeout(function () {
+            document.getElementById("sheetClose").focus({ preventScroll: true });
+          }, 50);
+        }
+        function closeSheet(velocity, bouncy) {
+          isOpen = false;
+          scrim.style.pointerEvents = "none";
+          document.body.style.overflow = "";
+          ys.to(sheetH, {
+            damping: bouncy ? 0.8 : 1,
+            response: 0.4,
+            velocity: velocity || 0,
+            onRest: function () {
+              if (!isOpen) {
+                sheet.style.visibility = "hidden";
+                page.style.transform = page.style.borderRadius = page.style.overflow = "";
+                if (opener) opener.focus({ preventScroll: true });
+              }
+            },
+          });
+        }
+        document.querySelectorAll("[data-case]").forEach(function (b) {
+          b.addEventListener("click", function () {
+            openSheet(b.dataset.case, b);
+          });
+        });
+        document.getElementById("sheetClose").addEventListener("click", function () {
+          closeSheet(0);
+        });
+        scrim.addEventListener("click", function () {
+          closeSheet(0);
+        });
+        addEventListener("keydown", function (e) {
+          if (e.key === "Escape" && isOpen) closeSheet(0);
+        });
+
+        // Drag the sheet: from the grabber anywhere, or from the body when it is scrolled to the top
+        (function () {
+          var dragging = false, decided = false, startY = 0, startVal = 0, tr = null, id = null;
+          function down(e) {
+            if (!isOpen && !ys.raf) return;
+            if (e.target.closest("button")) return;
+            id = e.pointerId;
+            startY = e.clientY;
+            startVal = ys.value; // grab from the live, on-screen value
+            ys.stop();
+            tr = new Tracker();
+            tr.add(e.clientY, e.timeStamp);
+            dragging = true;
+            decided = e.currentTarget === grab;
+            if (decided) sheet.setPointerCapture(id);
+          }
+          function move(e) {
+            if (!dragging || e.pointerId !== id) return;
+            var dy = e.clientY - startY;
+            if (!decided) {
+              // hysteresis: commit after ~10px, and only for a pull-down at scroll top
+              if (Math.abs(dy) < 10) return;
+              if (dy > 0 && body.scrollTop <= 0) {
+                decided = true;
+                sheet.setPointerCapture(id);
+                startY = e.clientY;
+                dy = 0;
+              } else {
+                dragging = false;
+                return;
+              }
+            }
+            tr.add(e.clientY, e.timeStamp);
+            var y = startVal + dy;
+            if (y < 0) y = -rubberband(-y, sheetH); // resist above the top
+            ys.value = y;
+            ys.target = y;
+            paint(y);
+            e.preventDefault();
+          }
+          function up(e) {
+            if (!dragging || e.pointerId !== id) return;
+            dragging = false;
+            if (!decided) return;
+            var v = tr.velocity();
+            var projected = ys.value + project(v);
+            if (projected > sheetH * 0.5 || v > 900) {
+              closeSheet(v, Math.abs(v) > 600);
+            } else {
+              isOpen = true;
+              ys.to(0, { damping: Math.abs(v) > 600 ? 0.8 : 1, response: 0.3, velocity: v });
+            }
+          }
+          [grab, body].forEach(function (el) {
+            el.addEventListener("pointerdown", down);
+          });
+          sheet.addEventListener("pointermove", move);
+          sheet.addEventListener("pointerup", up);
+          sheet.addEventListener("pointercancel", up);
+        })();
+
+        /* ───────── Lab carousel: 1:1 drag, momentum projection, snap, rubber-band ───────── */
+        (function () {
+          var car = document.getElementById("carousel");
+          var track = document.getElementById("track");
+          var slides = Array.from(track.children);
+          var dots = document.getElementById("dots");
+          var prev = document.getElementById("prev");
+          var next = document.getElementById("next");
+          slides.forEach(function () {
+            dots.appendChild(document.createElement("i"));
+          });
+          var xs = new Spring(0, function (x) {
+            track.style.transform = "translateX(" + x + "px)";
+            var i = nearest(x);
+            Array.from(dots.children).forEach(function (d, k) {
+              d.classList.toggle("on", k === i);
+            });
+            prev.disabled = i === 0;
+            next.disabled = i === snaps.length - 1;
+          });
+          var snaps = [];
+          function layout() {
+            var pad = slides[0].offsetLeft;
+            var maxScroll = Math.max(0, track.scrollWidth - car.clientWidth);
+            snaps = slides.map(function (s) {
+              return -Math.min(maxScroll, s.offsetLeft - pad);
+            });
+            snaps = snaps.filter(function (v, i) {
+              return i === 0 || v !== snaps[i - 1];
+            });
+            xs.set(snaps[nearest(xs.value)] || 0);
+          }
+          function nearest(x) {
+            var best = 0, bd = Infinity;
+            snaps.forEach(function (s, i) {
+              var d = Math.abs(s - x);
+              if (d < bd) {
+                bd = d;
+                best = i;
+              }
+            });
+            return best;
+          }
+          function goTo(i, v) {
+            i = Math.max(0, Math.min(snaps.length - 1, i));
+            xs.to(snaps[i], { damping: Math.abs(v || 0) > 800 ? 0.8 : 1, response: 0.45, velocity: v || 0 });
+          }
+          prev.addEventListener("click", function () {
+            goTo(nearest(xs.value) - 1);
+          });
+          next.addEventListener("click", function () {
+            goTo(nearest(xs.value) + 1);
+          });
+          car.addEventListener("keydown", function (e) {
+            if (e.key === "ArrowLeft") goTo(nearest(xs.value) - 1);
+            if (e.key === "ArrowRight") goTo(nearest(xs.value) + 1);
+          });
+
+          var dragging = false, decided = false, horizontal = false, sx = 0, sy = 0, start = 0, tr, pid, moved = false;
+          car.addEventListener("pointerdown", function (e) {
+            if (e.button !== 0) return;
+            dragging = true;
+            decided = false;
+            moved = false;
+            sx = e.clientX;
+            sy = e.clientY;
+            start = xs.value; // interrupt from the live value
+            xs.stop();
+            pid = e.pointerId;
+            tr = new Tracker();
+            tr.add(e.clientX, e.timeStamp);
+          });
+          car.addEventListener("pointermove", function (e) {
+            if (!dragging || e.pointerId !== pid) return;
+            var dx = e.clientX - sx, dy = e.clientY - sy;
+            if (!decided) {
+              if (Math.abs(dx) < 10 && Math.abs(dy) < 10) return;
+              decided = true;
+              horizontal = Math.abs(dx) > Math.abs(dy);
+              if (!horizontal) {
+                dragging = false;
+                return;
+              }
+              car.setPointerCapture(pid);
+              car.classList.add("dragging");
+              sx = e.clientX;
+              dx = 0;
+            }
+            moved = true;
+            tr.add(e.clientX, e.timeStamp);
+            var x = start + dx;
+            var min = snaps[snaps.length - 1], max = 0;
+            if (x > max) x = max + rubberband(x - max, car.clientWidth);
+            if (x < min) x = min - rubberband(min - x, car.clientWidth);
+            xs.value = xs.target = x;
+            xs.onUpdate(x);
+          });
+          function end(e) {
+            if (!dragging || e.pointerId !== pid) return;
+            dragging = false;
+            car.classList.remove("dragging");
+            if (!horizontal || !decided) return;
+            var v = tr.velocity();
+            var landing = xs.value + project(v, 0.998);
+            var i = nearest(landing);
+            // never skip more than one card per flick
+            var from = nearest(start);
+            i = Math.max(from - 1, Math.min(from + 1, i));
+            goTo(i, v);
+          }
+          car.addEventListener("pointerup", end);
+          car.addEventListener("pointercancel", end);
+          // a drag should not also click a link
+          car.addEventListener(
+            "click",
+            function (e) {
+              if (moved) {
+                e.preventDefault();
+                e.stopPropagation();
+                moved = false;
+              }
+            },
+            true
+          );
+          car.tabIndex = 0;
+          addEventListener("resize", layout);
+          layout();
+        })();
+      })();
+    </script>
+  </body>
+</html>
