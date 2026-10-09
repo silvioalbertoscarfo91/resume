@@ -1,0 +1,94 @@
+# Career-Ops Profile — Silvio Alberto Scarfò
+# Source of truth for facts: ../cv.md (built from the GitHub resume, index.html).
+
+candidate:
+  full_name: "Silvio Alberto Scarfò"
+  title: "Senior Full-Stack Engineer · Lead Developer & Architect"
+  email: "silvioalbertoscarfo@gmail.com"
+  phone: "+41 76 743 89 75"
+  location: "Wabern (Bern), Switzerland"
+  linkedin: "linkedin.com/in/silvio-alberto-scarfò"
+  github: "github.com/silvioalbertoscarfo91"
+  photo: ""
+  photo_style: rounded
+
+target_roles:
+  primary:
+    - "Senior Full-Stack Engineer"
+    - "Lead Engineer / Lead Developer / Tech Lead"
+    - "Software Architect / Solution Architect"
+  archetypes:
+    - name: "Lead Engineer / Tech Lead (full-stack)"
+      level: "Senior / Lead"
+      fit: "primary"
+    - name: "Software / Solution Architect"
+      level: "Senior"
+      fit: "primary"
+    - name: "Senior Full-Stack Engineer (Angular/React + Java/Spring)"
+      level: "Senior"
+      fit: "primary"
+    - name: "Senior Mobile Engineer (React Native)"
+      level: "Senior"
+      fit: "secondary"
+    - name: "AI-native / Agentic Software Engineer"
+      level: "Senior"
+      fit: "secondary"
+    - name: "Engineering Manager (small team, still hands-on)"
+      level: "First-line"
+      fit: "adjacent"
+
+narrative:
+  headline: "Senior full-stack engineer and architect who builds the digital customs of Switzerland"
+  exit_story: "Seven years on the Swiss federal customs programme DaziT at ti8m, from the award-winning QuickZoll and Via apps to the officers' mobile PWA I now lead as architect. Next step: a Lead Engineer or Architect role, growing towards leading a team."
+  superpowers:
+    - "Architect who still writes the code: owns architecture and decisions, guides 3–4 developers from refinement to production"
+    - "Bridge between business stakeholders and engineering in a regulated public-sector context"
+    - "True full stack: Angular / React Native frontends, Java Spring Boot + Kafka + PostgreSQL backends, AWS"
+    - "AI-native delivery: spec-driven development with Claude Code, agent guard rails, review of agent output"
+    - "Multilingual: Italian & Spanish native, English B2, German as daily working language"
+  proof_points:
+    - name: "QuickZoll & Via (now eVignette)"
+      hero_metric: "Led development and release; Best of Swiss Apps 2019"
+    - name: "Customs field PWA (BAZG)"
+      hero_metric: "Lead developer & responsible architect, team of 3–4 developers, since 2024"
+    - name: "Cloud Foundry → AWS migration"
+      hero_metric: "Team's whole app portfolio moved to AWS (ECS, RDS, S3, CloudWatch)"
+    - name: "Abacus timesheet AI"
+      hero_metric: "AI extraction from customer PDF timesheets, automatic booking into Abacus"
+    - name: "ti8m AI · Agentic delivery"
+      hero_metric: "Production-grade full-stack product (Spring Boot 4 / Angular 22) delivered with spec-driven Claude Code agents"
+
+compensation:
+  target_range: "CHF 130K-150K + bonus"
+  currency: "CHF"
+  minimum: "CHF 130K (base, at 100%) + bonus"
+  location_flexibility: "Hybrid with at most 2-3 office days/week anywhere in Switzerland; fully remote from Switzerland for employers worldwide"
+
+location:
+  country: "Switzerland"
+  city: "Wabern (Bern)"
+  timezone: "CET/CEST (Europe/Zurich)"
+  visa_status: "Swiss permit C (settled), no sponsorship needed in Switzerland"
+  authorized_in: ["Switzerland"]
+  needs_sponsorship: false
+  onsite_availability: "Up to 2-3 days/week in Switzerland; occasional travel for remote employers"
+
+language:
+  output: en
+  modes_dir: modes/de
+
+spend_tier: standard
+page_format: a4
+
+cv:
+  output_format: "html"
+
+cover_letter:
+  # Notice period not yet confirmed by the candidate — ask before stating it.
+  primary_domain: "public-sector digitalisation (Swiss federal customs), mobile & web apps"
+
+pipeline:
+  triage_threshold: 3.5
+  triage_min_urls: 5
+
+auto_pdf_score_threshold: 4.0

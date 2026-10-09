@@ -1,0 +1,288 @@
+# Portal Scanner Configuration — Silvio Alberto Scarfò
+# Scope: Switzerland (hybrid ≤ 2–3 office days) + fully remote worldwide (Switzerland eligible).
+# Full reference of every option: templates/portals.example.yml in the career-ops repo.
+
+scan_history:
+  recheck_after_days: 30
+
+title_filter:
+  positive:
+    - "Full Stack"
+    - "Full-Stack"
+    - "Fullstack"
+    - "Lead Engineer"
+    - "Lead Developer"
+    - "Lead Software"
+    - "Tech Lead"
+    - "Technical Lead"
+    - "Team Lead"
+    - "Engineering Lead"
+    - "Software Architect"
+    - "Solution Architect"
+    - "Solutions Architect"
+    - "Application Architect"
+    - "Staff Engineer"
+    - "Staff Software"
+    - "Principal Engineer"
+    - "Senior Software Engineer"
+    - "Senior Software Developer"
+    - "Senior Frontend"
+    - "Senior Backend"
+    - "Senior Java"
+    - "Senior Angular"
+    - "React Native"
+    - "Senior Mobile"
+    - "Softwarearchitekt"
+    - "Software-Architekt"
+    - "Applikationsarchitekt"
+    - "Lösungsarchitekt"
+    - "Lead Entwickler"
+    - "Senior Softwareentwickler"
+    - "Senior Software Entwickler"
+    - "Fullstack Entwickler"
+    - "Full-Stack Entwickler"
+    - "Java Entwickler"
+    - "Angular Entwickler"
+    - "Engineering Manager"
+  negative:
+    - "Junior"
+    - "word:Intern"
+    - "word:Interns"
+    - "Internship"
+    - "Werkstudent"
+    - "Praktikant"
+    - "Praktikum"
+    - "Lernende"
+    - "Lehrstelle"
+    - ".NET"
+    - "C#"
+    - "PHP"
+    - "Ruby"
+    - "Embedded"
+    - "Firmware"
+    - "FPGA"
+    - "SAP "
+    - "ABAP"
+    - "Salesforce"
+    - "Mainframe"
+    - "COBOL"
+    - "Data Scientist"
+    - "Research Scientist"
+
+location_filter:
+  always_allow:
+    - "Switzerland"
+    - "Schweiz"
+    - "Suisse"
+    - "Svizzera"
+    - "Bern"
+    - "Berne"
+    - "Zurich"
+    - "Zürich"
+    - "Basel"
+    - "Luzern"
+    - "Lucerne"
+    - "Zug"
+    - "Fribourg"
+    - "Biel"
+    - "Solothurn"
+    - "Thun"
+    - "Aarau"
+    - "Olten"
+    - "Baden"
+    - "Winterthur"
+    - "St. Gallen"
+    - "Lausanne"
+    - "Geneva"
+    - "Genève"
+    - "Lugano"
+    - "Remote - Europe"
+    - "Remote (Europe)"
+    - "EMEA"
+    - "Worldwide"
+    - "Anywhere"
+  allow:
+    - "Remote"
+    - "Europe"
+    - "CET"
+  block:
+    - "United States"
+    - "USA"
+    - "Canada"
+    - "India"
+    - "Brazil"
+    - "Australia"
+    - "Singapore"
+    - "Japan"
+
+# WebSearch-driven queries (level 3). These are the main discovery path when
+# direct ATS APIs are not reachable. Results are unconfirmed until checked at
+# the employer (AGENTS.md → Aggregator Listings).
+search_queries:
+  - name: CH - Lead / Architect Java Angular (Bern)
+    query: '("Lead Developer" OR "Tech Lead" OR "Software Architect" OR "Softwarearchitekt") (Java OR Angular OR "Spring Boot") Bern'
+    enabled: true
+  - name: CH - Senior Fullstack Java Angular (Bern)
+    query: '("Senior Fullstack" OR "Senior Full-Stack" OR "Senior Software Engineer") Java Angular "Spring Boot" Bern'
+    enabled: true
+  - name: CH - Senior Fullstack / Lead (Zurich, Basel, Lucerne, Zug)
+    query: '("Lead Engineer" OR "Tech Lead" OR "Senior Fullstack" OR "Software Architect") (Java OR Angular OR React) (Zürich OR Basel OR Luzern OR Zug) hybrid'
+    enabled: true
+  - name: CH - Solution / Application Architect
+    query: '("Solution Architect" OR "Applikationsarchitekt" OR "Lösungsarchitekt") (Java OR AWS OR Kafka) Schweiz'
+    enabled: true
+  - name: CH - React Native senior / lead
+    query: '("React Native") (Senior OR Lead) Schweiz OR Switzerland job'
+    enabled: true
+  - name: CH - ATS boards (Greenhouse / Lever / Ashby / SmartRecruiters / Workday)
+    query: 'site:boards.greenhouse.io OR site:job-boards.greenhouse.io OR site:jobs.lever.co OR site:jobs.ashbyhq.com OR site:jobs.smartrecruiters.com OR site:myworkdayjobs.com ("Senior" OR "Lead" OR "Staff") (Fullstack OR "Full Stack" OR Java OR Angular) (Zurich OR Bern OR Switzerland)'
+    enabled: true
+  - name: Remote - Europe full-stack lead (Java / TypeScript)
+    query: 'site:boards.greenhouse.io OR site:jobs.lever.co OR site:jobs.ashbyhq.com ("Staff" OR "Lead" OR "Senior") ("Full Stack" OR Fullstack) (Java OR Kotlin OR TypeScript) "Remote" (Europe OR EMEA OR Switzerland)'
+    enabled: true
+  - name: Remote - Switzerland
+    query: '("Senior" OR "Lead") ("Full Stack" OR "Software Engineer" OR "Architect") (Java OR Angular OR React) "100% remote" OR "fully remote" Switzerland'
+    enabled: true
+  - name: AI-native / agentic engineering
+    query: '("Senior" OR "Lead") ("AI Engineer" OR "Agentic" OR "AI-native") (Java OR TypeScript) (Switzerland OR Zurich OR Bern OR "Remote Europe")'
+    enabled: true
+
+tracked_companies:
+
+  # -- Bern region (public sector, federal suppliers, consultancies) --
+  - name: Swisscom
+    careers_url: https://www.swisscom.ch/en/about/career.html
+    scan_method: websearch
+    scan_query: 'Swisscom ("Senior" OR "Lead" OR "Architect") (Java OR Angular OR "Full Stack") job'
+    notes: "Bern / Zurich. Large IT employer, hybrid common."
+    enabled: true
+
+  - name: Die Post / PostFinance
+    careers_url: https://www.post.ch/en/jobs
+    scan_method: websearch
+    scan_query: '(Post OR PostFinance) ("Senior" OR "Lead" OR "Architekt") (Java OR Angular OR Fullstack) Bern job'
+    notes: "Bern HQ. Java/Angular shops."
+    enabled: true
+
+  - name: SBB CFF FFS
+    careers_url: https://company.sbb.ch/en/jobs-careers.html
+    scan_method: websearch
+    scan_query: 'SBB ("Senior" OR "Lead" OR "Architekt" OR "Architect") (Java OR Angular OR Fullstack OR "Software Engineer") job Bern'
+    notes: "Bern HQ. Large software org."
+    enabled: true
+
+  - name: BIT / Swiss Federal Administration
+    careers_url: https://jobs.admin.ch
+    scan_method: websearch
+    scan_query: 'site:jobs.admin.ch OR "Bundesverwaltung" ("Softwarearchitekt" OR "Applikationsarchitekt" OR "Software Engineer" OR "Entwickler") Java'
+    notes: "Bern. Federal IT (BIT, BAZG, armasuisse...). Public pay bands."
+    enabled: true
+
+  - name: Mobiliar
+    careers_url: https://www.mobiliar.ch/die-mobiliar/jobs-und-karriere
+    scan_method: websearch
+    scan_query: 'Mobiliar ("Senior" OR "Lead" OR "Architekt") (Java OR Angular OR Fullstack) job Bern'
+    notes: "Bern. Strong IT, hybrid."
+    enabled: true
+
+  - name: BEKB / Valiant / Bern banks
+    careers_url: https://www.bekb.ch/karriere
+    scan_method: websearch
+    scan_query: '(BEKB OR Valiant OR "Berner Kantonalbank") ("Software" OR "Architekt" OR "Entwickler") job'
+    enabled: true
+
+  - name: Bedag Informatik
+    careers_url: https://www.bedag.ch/jobs
+    scan_method: websearch
+    scan_query: 'Bedag ("Software" OR "Architekt" OR "Entwickler" OR "Engineer") job Bern'
+    notes: "Bern. Canton IT provider."
+    enabled: true
+
+  - name: Adnovum
+    careers_url: https://www.adnovum.com/careers
+    scan_method: websearch
+    scan_query: 'Adnovum ("Senior" OR "Lead" OR "Architect") (Java OR Angular OR "Full Stack") job (Bern OR Zurich)'
+    enabled: true
+
+  - name: ELCA
+    careers_url: https://www.elca.ch/en/careers
+    scan_method: websearch
+    scan_query: 'ELCA ("Senior" OR "Lead" OR "Architect") (Java OR Angular) job Switzerland'
+    enabled: true
+
+  - name: Zühlke
+    careers_url: https://www.zuehlke.com/en/careers
+    scan_method: websearch
+    scan_query: 'Zühlke ("Lead" OR "Architect" OR "Senior") ("Software Engineer" OR "Full Stack") job (Bern OR Zurich)'
+    enabled: true
+
+  - name: ERNI
+    careers_url: https://www.betterask.erni/ch-en/careers
+    scan_method: websearch
+    scan_query: 'ERNI ("Senior" OR "Lead" OR "Architect") (Java OR Angular OR "Full Stack") job Bern OR Zurich'
+    enabled: true
+
+  - name: Netcetera
+    careers_url: https://www.netcetera.com/careers
+    scan_method: websearch
+    scan_query: 'Netcetera ("Senior" OR "Lead" OR "Architect") (Java OR Angular OR "Full Stack") job Bern OR Zurich'
+    enabled: true
+
+  - name: Mimacom
+    careers_url: https://www.mimacom.com/careers
+    scan_method: websearch
+    scan_query: 'Mimacom ("Senior" OR "Lead" OR "Architect") (Java OR "Spring") job Bern'
+    notes: "Bern. Spring-heavy consultancy."
+    enabled: true
+
+  - name: Puzzle ITC
+    careers_url: https://www.puzzle.ch/jobs
+    scan_method: websearch
+    scan_query: 'Puzzle ITC ("Software" OR "Architekt" OR "Entwickler" OR "Engineer") job Bern'
+    notes: "Bern. Java/Angular, open source culture."
+    enabled: true
+
+  - name: Ergon Informatik
+    careers_url: https://www.ergon.ch/en/jobs
+    scan_method: websearch
+    scan_query: 'Ergon Informatik ("Software Engineer" OR "Architect") job Zurich'
+    enabled: true
+
+  # -- Swiss product companies --
+  - name: Digitec Galaxus
+    careers_url: https://www.digitecgalaxus.ch/en/jobs
+    scan_method: websearch
+    scan_query: 'Digitec Galaxus ("Senior" OR "Lead" OR "Staff") ("Software Engineer" OR "Full Stack") job'
+    enabled: true
+
+  - name: On
+    careers_url: https://www.on.com/en-ch/careers
+    scan_method: websearch
+    scan_query: 'On running careers ("Senior" OR "Lead" OR "Staff") ("Software Engineer" OR "Full Stack") Zurich'
+    enabled: true
+
+  - name: Scandit
+    careers_url: https://job-boards.greenhouse.io/scandit
+    api: https://boards-api.greenhouse.io/v1/boards/scandit/jobs
+    notes: "Zurich. Mobile / computer vision."
+    enabled: true
+
+  - name: Google Zurich
+    careers_url: https://www.google.com/about/careers/applications/jobs/results/?location=Zurich
+    scan_method: websearch
+    scan_query: 'Google careers Zurich ("Senior Software Engineer" OR "Staff Software Engineer") full stack'
+    notes: "Zurich. High comp; hybrid 3 days."
+    enabled: true
+
+  - name: Swiss Re / Zurich Insurance / Helvetia
+    careers_url: https://www.swissre.com/careers.html
+    scan_method: websearch
+    scan_query: '("Swiss Re" OR "Zurich Insurance" OR Helvetia) ("Senior" OR "Lead" OR "Architect") (Java OR Angular OR "Full Stack") job Switzerland'
+    enabled: true
+
+job_boards:
+  - name: SwissDevJobs (manual / websearch)
+    careers_url: https://swissdevjobs.ch
+    scan_method: websearch
+    scan_query: 'site:swissdevjobs.ch ("Senior" OR "Lead" OR "Architect") (Java OR Angular OR "Full Stack")'
+    enabled: true
