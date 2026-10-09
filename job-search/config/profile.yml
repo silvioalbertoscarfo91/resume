@@ -84,7 +84,9 @@ cv:
   output_format: "html"
 
 cover_letter:
-  # Notice period not yet confirmed by the candidate — ask before stating it.
+  # Notice period: 3 months, effective at the end of a month (confirmed by candidate 2026-10-09).
+  notice_period_days: 90
+  notice_period_text: "3 months to the end of a month"
   primary_domain: "public-sector digitalisation (Swiss federal customs), mobile & web apps"
 
 pipeline:

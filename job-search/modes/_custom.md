@@ -30,7 +30,7 @@
 - Tailored CVs and cover letters are written in the **language of the job posting**: German JD → German, English JD → English, French JD → English unless asked.
 - German level: never write "C1" or "fluent/fliessend". Use "German: daily working language since 2022 (fide B1, 2023)" / "Deutsch: tägliche Arbeitssprache seit 2022 (fide B1, 2023)".
 - Never name the internal BAZG customs field app (keep it as "internal mobile app for customs officers").
-- Notice period is not confirmed yet — ask before writing it anywhere.
+- Notice period: 3 months to the end of a month (Kündigungsfrist: 3 Monate auf Monatsende). Earliest start = end of the month in which notice is given + 3 months.
 
 ## Custom Workflows
 
